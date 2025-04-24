@@ -24,24 +24,13 @@ TIMEHOURTIMEKEEPING="$( date +'%H')"
 #TIMEHOURTIMEKEEPING="$(echo 06)"
 #TIMEMINUTETIMEKEEPING="$(echo 59)"
 
-
-
-# If not time hour at 07 (7 am), exit.
-if ! [ "$TIMEHOURTIMEKEEPING" == "06" ]; then exit; fi
-
-# If time hour is at 07 (7 am), continue.
-if [ "$TIMEHOURTIMEKEEPING" == "06" ]; then echo "Running noisemaker!"; fi
-
-# Play sound and show zenity box
-if [ "$TIMEHOURTIMEKEEPING" == "06" ]; then bash noisemaker.sh; fi
-
-# If not time hour 07 (7 am), sleep repeatedly until it changes.
-if ! [ "$TIMEHOURTIMEKEEPING" == "06" ]; then while ! $TIMEHOURTIMEKEEPING == "*"; do sleep 1; done; fi
+# continue
+bash noisemaker.sh
 
 # The user dealt with Zenity, we kill music BUT NOT THE WHOLE SCRIPT, then resume as normal checking for time.
-echo ""
+#echo ""
 
-echo "Killing paplay HARD to stop fly.wav."
+#echo "Killing paplay HARD to stop fly.wav."
 echo ""
 pkill paplay
 killall paplay
@@ -52,8 +41,10 @@ kill -9 $(pgrep aplay)
 
 echo ""
 
-# Sleep for an hour and 2 mins to avoid accidental re-trigger
-echo "Sleeping for 62 mins before checking for another event."
-sleep 3720s
+# Sleep for an 1 min to avoid accidental re-trigger
+clear
+echo "Sleeping for 1 min before checking for another event."
+#echo lastword
+sleep 60s
 
 exit

@@ -74,32 +74,37 @@ echo "Current time hour is:"
 # Get the current time in 24 hours as a number.
 TIMEHOURTIMEKEEPING="$( date +'%H')"
 TIMEMINUTETIMEKEEPING="$( date +'%M')"
-
-# Debug, comment out in final, comment out above if using for testing.
-#TIMEHOURTIMEKEEPING="$(echo 06)"
-#TIMEMINUTETIMEKEEPING="$(echo 59)"
+TIMEDAYTIMEKEEPING="$( date +'%A')"
 
 # Echo the gathered result.
-echo $TIMEHOURTIMEKEEPING
-echo ":"
-echo $TIMEMINUTETIMEKEEPING
-
-echo "(waiting for 06:59)"
+clear
+echo "life-scheduler.sh"
+echo ""
+echo $TIMEHOURTIMEKEEPING:$TIMEMINUTETIMEKEEPING $TIMEDAYTIMEKEEPING
+echo ""
+echo "Waiting until next event..."
+echo ""
+echo "Checking..."
 echo ""
 
-# Compare the TIMEHOURTIMEKEEPING with the hour that we wish to perform an action at.
-
-# If at time hour 06, cont.
-if [ $TIMEHOURTIMEKEEPING -eq 06 ]
+# =====================================================================
+# This is an event. There are many like it, but this one is mine.
+if [ $TIMEDAYTIMEKEEPING == Thursday ]
 then
-if [ $TIMEMINUTETIMEKEEPING -eq 59 ]
+if [ $TIMEHOURTIMEKEEPING -eq 11 ]
 then
-    echo "Time is right, do attempt!"
-    echo ""
+if [ $TIMEMINUTETIMEKEEPING -eq 44 ]
+then
+    echo "Time is right, do notif!"
     sleep 0s
     bash alert.sh
 fi
 fi
+fi
+# end of an event.
+# =====================================================================
+
+
 
 # Sleep for 1 second so we don't lag the system with very many checks.
     sleep 1
