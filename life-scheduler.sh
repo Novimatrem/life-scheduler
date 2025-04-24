@@ -88,12 +88,46 @@ echo "Checking..."
 echo ""
 
 # =====================================================================
-# This is an event. There are many like it, but this one is mine.
-if [ $TIMEDAYTIMEKEEPING == Thursday ]
+# movement group
+if [ $TIMEDAYTIMEKEEPING == Monday ]
 then
-if [ $TIMEHOURTIMEKEEPING -eq 11 ]
+if [ $TIMEHOURTIMEKEEPING -eq 10 ]
 then
-if [ $TIMEMINUTETIMEKEEPING -eq 44 ]
+if [ $TIMEMINUTETIMEKEEPING -eq 00 ]
+then
+    echo "Time is right, do notif!"
+    sleep 0s
+    bash alert.sh
+fi
+fi
+fi
+# end of an event.
+# =====================================================================
+
+# =====================================================================
+# walking group
+if [ $TIMEDAYTIMEKEEPING == Wednesday ]
+then
+if [ $TIMEHOURTIMEKEEPING -eq 12 ]
+then
+if [ $TIMEMINUTETIMEKEEPING -eq 00 ]
+then
+    echo "Time is right, do notif!"
+    sleep 0s
+    bash alert.sh
+fi
+fi
+fi
+# end of an event.
+# =====================================================================
+
+# =====================================================================
+# polycule minecraft
+if [ $TIMEDAYTIMEKEEPING == Saturday ]
+then
+if [ $TIMEHOURTIMEKEEPING -eq 17 ]
+then
+if [ $TIMEMINUTETIMEKEEPING -eq 59 ]
 then
     echo "Time is right, do notif!"
     sleep 0s
