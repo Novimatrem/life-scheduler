@@ -41,6 +41,10 @@ kill -9 $(pgrep aplay)
 
 echo ""
 
+# BUG: FIXME: HACK: fix sound breaking randomly after this runs sometimes???
+killall pulseaudio
+killall pipewire
+
 # Sleep for an 1 min to avoid accidental re-trigger
 clear
 echo "Sleeping for 1 min before checking for another event."
