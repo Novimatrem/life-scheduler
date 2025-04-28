@@ -6,6 +6,9 @@ Novimatrem's life scheduler script - Licensed under the GNU GPL v3.0.
 REQUIRES and DEPENDS UPON ``zenity``, ``espeak``, ``paplay``, ``bash``, and a working ``fortune`` command.
 
 # Installation
+This script relies on pulseaudio's ability to respawn itself upon death to be functional. First enter the following command into your Terminal, to enable that functionality.
+```sudo sed -i 's/^; autospawn = yes/autospawn = yes/' /etc/pulse/client.conf```
+
 Clone the contents of this repo into a folder where it will be safely accessible in the future; ``git clone https://gitlab.com/Novimatrem/life-scheduler``
 
 I usually place it in; ``/opt/`` making the final path ``/opt/life-scheduler/``. 
