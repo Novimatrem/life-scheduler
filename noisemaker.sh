@@ -52,8 +52,9 @@ systemctl --user stop pulseaudio
 systemctl --user restart pulseaudio
 systemctl --user restart pulseaudio.service
 systemctl --user restart pulseaudio.socket
-
-
+killall pipewire
+pipewire &
+pipewire-pulse &
 pulseaudio --start
 pulseaudio
 # Switch sound device
