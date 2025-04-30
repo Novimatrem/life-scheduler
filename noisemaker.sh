@@ -61,6 +61,12 @@ pulseaudio
 # Switch sound device
 #pacmd set-default-sink "alsa_output.pci-0000_01_00.1.hdmi-stereo"
 
+# give everything enough time to start up or else the script fails and halts.
+echo ""
+echo "Giving everything 15 seconds to start up which is enough time or else the script fails and halts..."
+echo ""
+sleep 15s
+# /give everything enough time to start up or else the script fails and halts.
 
 # Unmute the speakers
 amixer set Master unmute
