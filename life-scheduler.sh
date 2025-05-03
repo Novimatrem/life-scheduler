@@ -122,6 +122,23 @@ fi
 # =====================================================================
 
 # =====================================================================
+# shower
+if [ $TIMEDAYTIMEKEEPING == Friday ]
+then
+if [ $TIMEHOURTIMEKEEPING -eq 16 ]
+then
+if [ $TIMEMINUTETIMEKEEPING -eq 00 ]
+then
+    echo "Time is right, do notif!"
+    sleep 0s
+    bash alert.sh
+fi
+fi
+fi
+# end of an event.
+# =====================================================================
+
+# =====================================================================
 # polycule minecraft
 if [ $TIMEDAYTIMEKEEPING == Saturday ]
 then
