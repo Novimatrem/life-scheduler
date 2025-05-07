@@ -65,8 +65,12 @@ pulseaudio
 echo ""
 echo "Giving everything 15 seconds to start up which is enough time or else the script fails and halts..."
 echo ""
+pulseaudio -k
 sleep 15s
 # /give everything enough time to start up or else the script fails and halts.
+echo ""
+echo "Starting quick and dirty debugging..."
+echo ""
 
 # Unmute the speakers
 amixer set Master unmute
@@ -74,18 +78,33 @@ amixer -q -D pulse sset Master unmute
 pactl set-sink-mute 0 0
 pactl set-sink-mute 1 0
 
+
+
+echo ""
+
+echo ""
+set -x
+
+
 # Speaker warming
 cd "$(dirname "$0")"
-paplay $(pwd)/silence.wav # Play a sound so my desktop speakers won't miss the first 3 seconds of audio if left for a while.
-aplay $(pwd)/silence.wav # Play a sound so my desktop speakers won't miss the first 3 seconds of audio if left for a while.
-espeak -p 66 -s 200 ". ... ."
+
+
+
+
+
+
+echo ""
+
+echo ""
+
 #echo 2s
 
 # Speaker warming 2
 cd "$(dirname "$0")"
-paplay $(pwd)/silence.wav # Play a sound so my desktop speakers won't miss the first 3 seconds of audio if left for a while.
-aplay $(pwd)/silence.wav # Play a sound so my desktop speakers won't miss the first 3 seconds of audio if left for a while.
-espeak -p 66 -s 200 ". ... ."
+
+
+
 #echo 2s
 
 # Set volume to reasonable percentage to wake me up, but not to deafen the neighborhood
@@ -124,27 +143,28 @@ flashing
 cd "$(dirname "$0")"
 
 
-# Play fly.wav with paplay
+
 amixer -D pulse sset Master 45%
 echo ""
 echo Playing fly.wav!
 echo ""
 echo "pwd is $(pwd), User- make sure fly.wav is there."
-paplay --volume=111111.420 $(pwd)/fly.wav &
-espeak -p 66 -s 200 ". ... ."
-#espeak -p 66 -s 150 "Wake up... . ... . "
+
+
+echo 0s && nohup paplay fly.wav && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out && rm -rf /opt/nohup.out && disown & disown
+
 
 # Fluctuate brightness to alert me
 flashing
 
 echo 0s
-#espeak -p 66 -s 150 "Wake up... . ... . "
+
 
 # Fluctuate brightness to alert me
 flashing
 
 echo 0s
-#espeak -p 66 -s 150 "Wake up... . ... . "
+
 
 # Fluctuate brightness to alert me
 flashing
@@ -164,142 +184,143 @@ echo "Popping zenity!"
 echo ""
 echo "Waiting for zenity to be dealt with (press OK or be closed), then we continue."
 echo ""
+
+echo 0.2s
+( speaker-test -t sine -f 1000 )& pid=$! ; echo 1s ; kill -9 $pid
+echo 0.2s
+( speaker-test -t sine -f 1000 )& pid=$! ; echo 1s ; kill -9 $pid
+echo 0.2s
+( speaker-test -t sine -f 1000 )& pid=$! ; echo 1s ; kill -9 $pid
+echo 0.2s
+( speaker-test -t sine -f 1000 )& pid=$! ; echo 1s ; kill -9 $pid
+echo 0.2s
+( speaker-test -t sine -f 1000 )& pid=$! ; echo 1s ; kill -9 $pid
+echo 0.2s
+( speaker-test -t sine -f 1000 )& pid=$! ; echo 1s ; kill -9 $pid
+echo 0.2s
+( speaker-test -t sine -f 1000 )& pid=$! ; echo 1s ; kill -9 $pid
+
+
+# m
+echo 0.2s
+
+
+
+
+
+echo 0.2s
+# /
+
+
+
+# m
+echo 0.2s
+
+
+
+
+
+echo 0.2s
+# /
+
+
+
+# m
+echo 0.2s
+
+
+
+
+
+echo 0.2s
+# /
+
+
+
+# m
+echo 0.2s
+
+
+
+
+
+echo 0.2s
+# /
+
+
+
+# m
+echo 0.2s
+
+
+
+
+
+echo 0.2s
+# /
+
+
+
+# m
+echo 0.2s
+
+
+
+
+
+echo 0.2s
+# /
+
+
+
+# m
+echo 0.2s
+
+
+
+
+
+echo 0.2s
+# /
+
+
+
+# m
+echo 0.2s
+
+
+
+
+
+echo 0.2s
+# /
+
+
+
+# m
+echo 0.2s
+
+
+
+
+
+echo 0.2s
+# /
+
+
+
+# m
+echo 0.2s
+
+
+
+
+
+echo 0.2s
+# /
+
+sleep 15s
 notify-send "Calendar event!"
-echo 0.2s
-( speaker-test -t sine -f 1000 )& pid=$! ; echo 1s ; kill -9 $pid
-echo 0.2s
-( speaker-test -t sine -f 1000 )& pid=$! ; echo 1s ; kill -9 $pid
-echo 0.2s
-( speaker-test -t sine -f 1000 )& pid=$! ; echo 1s ; kill -9 $pid
-echo 0.2s
-( speaker-test -t sine -f 1000 )& pid=$! ; echo 1s ; kill -9 $pid
-echo 0.2s
-( speaker-test -t sine -f 1000 )& pid=$! ; echo 1s ; kill -9 $pid
-echo 0.2s
-( speaker-test -t sine -f 1000 )& pid=$! ; echo 1s ; kill -9 $pid
-echo 0.2s
-( speaker-test -t sine -f 1000 )& pid=$! ; echo 1s ; kill -9 $pid
-
-
-# m
-echo 0.2s
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-espeak -p 66 -s 200 ". ... ."
-echo 0.2s
-# /
-
-
-
-# m
-echo 0.2s
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-espeak -p 66 -s 200 ". ... ."
-echo 0.2s
-# /
-
-
-
-# m
-echo 0.2s
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-espeak -p 66 -s 200 ". ... ."
-echo 0.2s
-# /
-
-
-
-# m
-echo 0.2s
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-espeak -p 66 -s 200 ". ... ."
-echo 0.2s
-# /
-
-
-
-# m
-echo 0.2s
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-espeak -p 66 -s 200 ". ... ."
-echo 0.2s
-# /
-
-
-
-# m
-echo 0.2s
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-espeak -p 66 -s 200 ". ... ."
-echo 0.2s
-# /
-
-
-
-# m
-echo 0.2s
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-espeak -p 66 -s 200 ". ... ."
-echo 0.2s
-# /
-
-
-
-# m
-echo 0.2s
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-espeak -p 66 -s 200 ". ... ."
-echo 0.2s
-# /
-
-
-
-# m
-echo 0.2s
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-espeak -p 66 -s 200 ". ... ."
-echo 0.2s
-# /
-
-
-
-# m
-echo 0.2s
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-paplay --volume=999969.420 $(pwd)/invalid.wav &
-aplay --volume=999969.420 $(pwd)/invalid.wav &
-espeak -p 66 -s 200 ". ... ."
-echo 0.2s
-# /
-
-
 echo 0s && nohup zenity --warning --text "Calendar event! Hold escape for 30 moments to turn-off." && rm -rf $HOME/nohup.out && rm -rf $(pwd)/nohup.out
 zenity --warning --text "Calendar event! Hold escape for 29 more moments to turn-off..."
 zenity --warning --text "Calendar event! Hold escape for 28 more moments to turn-off..."
@@ -336,7 +357,7 @@ rm -rf $(pwd)/nohup.out
 echo 0s
 echo "Removing messy non-required nohup.out!"
 echo ""
-echo "Killing paplay HARD to stop fly.wav."
+
 echo ""
 pkill paplay
 killall paplay
@@ -347,17 +368,17 @@ kill -9 $(pgrep aplay)
 
 # Amazing speech synthesis, this is.
 echo 1s
-paplay $(pwd)/silence.wav # Play a sound so my desktop speakers won't miss the first 3 seconds of audio if left for a while.
-aplay $(pwd)/silence.wav # Play a sound so my desktop speakers won't miss the first 3 seconds of audio if left for a while.
-espeak -p 66 -s 200 ". ... ."
+
+
+
 echo 2s
-espeak -p 66 -s 200 ". ... ."
-paplay $(pwd)/silence.wav
-aplay $(pwd)/silence.wav
+
+
+
 echo 2s
-espeak "Hello! . ... . ...you have a calendar event. . ... . ..."
+
 echo 1s
-espeak "Please check your calendar immediately."
+
 echo 2s
 
 # Open to-do list (uncomment and change path to where your to-do list in PDF form is)
@@ -365,7 +386,7 @@ echo 2s
 
 # Daily fortune
 #TODAYFORT="$(fortune -a)"
-#nohup zenity --warning --text "$(echo $TODAYFORT)" & nohup espeak -p 66 -s 150 -g 3 "$(echo $TODAYFORT)"
+
 
 echo ""
 rm -rf $HOME/nohup.out
