@@ -27,7 +27,7 @@ TIMEHOURTIMEKEEPING="$( date +'%H')"
 # continue
 bash noisemaker.sh
 
-# The user dealt with Zenity, we kill music BUT NOT THE WHOLE SCRIPT, then resume as normal checking for time.
+# The user dealt with kdialog, we kill music BUT NOT THE WHOLE SCRIPT, then resume as normal checking for time.
 #echo ""
 
 #echo "Killing paplay HARD to stop fly.wav."
