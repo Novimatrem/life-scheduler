@@ -5,6 +5,8 @@ Novimatrem's life scheduler script - Licensed under the GNU GPL v3.0.
 
 REQUIRES and DEPENDS UPON ``kdialog``, ``espeak``, ``paplay``, ``bash``, and a working ``fortune`` command.
 
+Note: script functionality requires system to remain unmuted and unlocked
+
 # Installation
 This script relies on pulseaudio's ability to respawn itself upon death to be functional. First enter the following command into your Terminal, to enable that functionality.
 ```sudo sed -i 's/^; autospawn = yes/autospawn = yes/' /etc/pulse/client.conf```
