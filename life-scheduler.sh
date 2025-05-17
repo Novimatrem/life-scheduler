@@ -40,7 +40,8 @@ chmod +x alert.sh
 chmod +x noisemaker.sh
 chmod +x life-scheduler.sh
 
-sleep 0s
+# delay to make sure it starts at the correct time to actually work
+sleep 20s
 
 notify-send "Note: ${0##*/} functionality requires system to remain unmuted and unlocked"
 cd "$(dirname "$0")"
