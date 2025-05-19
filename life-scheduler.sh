@@ -97,9 +97,9 @@ echo ""
 # movement group
 if [ $TIMEDAYTIMEKEEPING == Monday ]
 then
-if [ $TIMEHOURTIMEKEEPING -eq 10 ]
+if [ $TIMEHOURTIMEKEEPING -eq 09 ]
 then
-if [ $TIMEMINUTETIMEKEEPING -eq 00 ]
+if [ $TIMEMINUTETIMEKEEPING -eq 55 ]
 then
     echo "Time is right, do notif!"
     sleep 0s
@@ -114,9 +114,9 @@ fi
 # walking group
 if [ $TIMEDAYTIMEKEEPING == Wednesday ]
 then
-if [ $TIMEHOURTIMEKEEPING -eq 12 ]
+if [ $TIMEHOURTIMEKEEPING -eq 11 ]
 then
-if [ $TIMEMINUTETIMEKEEPING -eq 00 ]
+if [ $TIMEMINUTETIMEKEEPING -eq 55 ]
 then
     echo "Time is right, do notif!"
     sleep 0s
@@ -131,9 +131,9 @@ fi
 # shower
 if [ $TIMEDAYTIMEKEEPING == Friday ]
 then
-if [ $TIMEHOURTIMEKEEPING -eq 16 ]
+if [ $TIMEHOURTIMEKEEPING -eq 15 ]
 then
-if [ $TIMEMINUTETIMEKEEPING -eq 00 ]
+if [ $TIMEMINUTETIMEKEEPING -eq 55 ]
 then
     echo "Time is right, do notif!"
     sleep 0s
@@ -150,7 +150,7 @@ if [ $TIMEDAYTIMEKEEPING == Saturday ]
 then
 if [ $TIMEHOURTIMEKEEPING -eq 17 ]
 then
-if [ $TIMEMINUTETIMEKEEPING -eq 59 ]
+if [ $TIMEMINUTETIMEKEEPING -eq 55 ]
 then
     echo "Time is right, do notif!"
     sleep 0s
