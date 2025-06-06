@@ -147,12 +147,12 @@ fi
 # =====================================================================
 
 # =====================================================================
-# shower
+# shower (time moved from 15:55 to 16:03 so it doesn't crash me saying goodbye on minecraft)
 if [ $TIMEDAYTIMEKEEPING == Friday ]
 then
-if [ $TIMEHOURTIMEKEEPING -eq 15 ]
+if [ $TIMEHOURTIMEKEEPING -eq 16 ]
 then
-if [ $TIMEMINUTETIMEKEEPING -eq 55 ]
+if [ $TIMEMINUTETIMEKEEPING -eq 03 ]
 then
     echo "Time is right, do notif!"
     sleep 0s
