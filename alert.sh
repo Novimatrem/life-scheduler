@@ -44,6 +44,9 @@ echo ""
 # BUG: FIXME: HACK: fix sound breaking randomly after this runs sometimes???
 killall pulseaudio
 killall pipewire
+sleep 15s
+pulseaudio -D # linux mint fix 2
+sleep 15s
 
 # Sleep for an 1 min to avoid accidental re-trigger
 clear
