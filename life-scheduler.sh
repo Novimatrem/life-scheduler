@@ -168,7 +168,18 @@ fi
 
 # =====================================================================
 # polycule minecraft
-# // Time was once surrendered here. It's been gently reclaimed.
+if [ $TIMEDAYTIMEKEEPING == Friday ]
+then
+if [ $TIMEHOURTIMEKEEPING -eq 11 ]
+then
+if [ $TIMEMINUTETIMEKEEPING -eq 45 ]
+then
+    echo "Time is right, do notif!"
+    sleep 0s
+    bash alert.sh
+fi
+fi
+fi
 # end of an event.
 # =====================================================================
 
