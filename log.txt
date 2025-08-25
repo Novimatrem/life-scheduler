@@ -1,0 +1,150 @@
+==========================================
+Noisemaker started at Mon Aug 25 16:27:20 BST 2025
+Entering the alsoradio script at Mon Aug 25 16:27:53 BST 2025
+Are past the alsoradio script in noisemaker.sh at Mon Aug 25 16:27:53 BST 2025
+Entering the alsonote script at Mon Aug 25 16:27:53 BST 2025
+Are past the alsonote script in noisemaker.sh at Mon Aug 25 16:27:53 BST 2025
+Hello from the internals of the alsonote script is here Mon Aug 25 16:27:53 BST 2025
+About to play the sound at Mon Aug 25 16:27:53 BST 2025
+Played the sound at Mon Aug 25 16:28:29 BST 2025
+About to open kdialog Mon Aug 25 16:28:44 BST 2025
+Goodbye from the internals of the alsonote script is here Mon Aug 25 16:29:13 BST 2025
+User dealt with the kdialogs Mon Aug 25 16:29:19 BST 2025
+Exiting noisemaker at Mon Aug 25 16:29:32 BST 2025
+==========================================
+Noisemaker started at Mon Aug 25 16:30:34 BST 2025
+Entering the alsoradio script at Mon Aug 25 16:31:07 BST 2025
+Are past the alsoradio script in noisemaker.sh at Mon Aug 25 16:31:07 BST 2025
+Entering the alsonote script at Mon Aug 25 16:31:07 BST 2025
+Are past the alsonote script in noisemaker.sh at Mon Aug 25 16:31:07 BST 2025
+Hello from the internals of the alsonote script is here Mon Aug 25 16:31:07 BST 2025
+About to play the sound at Mon Aug 25 16:31:07 BST 2025
+Played the sound at Mon Aug 25 16:31:07 BST 2025
+About to open kdialog Mon Aug 25 16:31:22 BST 2025
+Goodbye from the internals of the alsonote script is here Mon Aug 25 16:32:27 BST 2025
+User dealt with the kdialogs Mon Aug 25 16:33:14 BST 2025
+Exiting noisemaker at Mon Aug 25 16:33:27 BST 2025
+==========================================
+Noisemaker started at Mon Aug 25 16:34:15 BST 2025
+Entering the alsoradio script at Mon Aug 25 16:34:47 BST 2025
+Are past the alsoradio script in noisemaker.sh at Mon Aug 25 16:34:47 BST 2025
+Entering the alsonote script at Mon Aug 25 16:34:47 BST 2025
+Are past the alsonote script in noisemaker.sh at Mon Aug 25 16:34:47 BST 2025
+Hello from the internals of the alsonote script is here Mon Aug 25 16:34:47 BST 2025
+About to play the sound at Mon Aug 25 16:34:47 BST 2025
+Played the sound at Mon Aug 25 16:34:47 BST 2025
+About to open kdialog Mon Aug 25 16:35:03 BST 2025
+User dealt with the kdialogs Mon Aug 25 16:35:30 BST 2025
+Exiting noisemaker at Mon Aug 25 16:35:35 BST 2025
+==========================================
+Noisemaker started at Mon Aug 25 16:35:52 BST 2025
+Goodbye from the internals of the alsonote script is here Mon Aug 25 16:36:07 BST 2025
+Entering the alsoradio script at Mon Aug 25 16:36:24 BST 2025
+Are past the alsoradio script in noisemaker.sh at Mon Aug 25 16:36:24 BST 2025
+Entering the alsonote script at Mon Aug 25 16:36:24 BST 2025
+Are past the alsonote script in noisemaker.sh at Mon Aug 25 16:36:24 BST 2025
+Hello from the internals of the alsonote script is here Mon Aug 25 16:36:24 BST 2025
+About to play the sound at Mon Aug 25 16:36:24 BST 2025
+Played the sound at Mon Aug 25 16:36:25 BST 2025
+About to open kdialog Mon Aug 25 16:36:40 BST 2025
+User dealt with the kdialogs Mon Aug 25 16:37:07 BST 2025
+Exiting noisemaker at Mon Aug 25 16:37:09 BST 2025
+Goodbye from the internals of the alsonote script is here Mon Aug 25 16:37:44 BST 2025
+==========================================
+Noisemaker started at Mon Aug 25 16:38:04 BST 2025
+Entering the alsoradio script at Mon Aug 25 16:38:37 BST 2025
+Are past the alsoradio script in noisemaker.sh at Mon Aug 25 16:38:37 BST 2025
+Entering the alsonote script at Mon Aug 25 16:38:37 BST 2025
+Are past the alsonote script in noisemaker.sh at Mon Aug 25 16:38:37 BST 2025
+Hello from the internals of the alsonote script is here Mon Aug 25 16:38:37 BST 2025
+About to play the sound at Mon Aug 25 16:38:37 BST 2025
+Played the sound at Mon Aug 25 16:38:37 BST 2025
+About to open kdialog Mon Aug 25 16:38:52 BST 2025
+User dealt with the kdialogs Mon Aug 25 16:39:17 BST 2025
+Exiting noisemaker at Mon Aug 25 16:39:19 BST 2025
+Goodbye from the internals of the alsonote script is here Mon Aug 25 16:39:57 BST 2025
+==========================================
+Noisemaker started at Mon Aug 25 16:40:49 BST 2025
+Entering the alsoradio script at Mon Aug 25 16:41:22 BST 2025
+Are past the alsoradio script in noisemaker.sh at Mon Aug 25 16:41:22 BST 2025
+Entering the alsonote script at Mon Aug 25 16:41:22 BST 2025
+Are past the alsonote script in noisemaker.sh at Mon Aug 25 16:41:22 BST 2025
+Hello from the internals of the alsonote script is here Mon Aug 25 16:41:22 BST 2025
+About to play the sound at Mon Aug 25 16:41:22 BST 2025
+Played the sound at Mon Aug 25 16:41:22 BST 2025
+About to open kdialog Mon Aug 25 16:41:37 BST 2025
+User dealt with the kdialogs Mon Aug 25 16:42:00 BST 2025
+Exiting noisemaker at Mon Aug 25 16:42:04 BST 2025
+==========================================
+Noisemaker started at Mon Aug 25 16:42:35 BST 2025
+Goodbye from the internals of the alsonote script is here Mon Aug 25 16:42:42 BST 2025
+Entering the alsoradio script at Mon Aug 25 16:43:08 BST 2025
+Are past the alsoradio script in noisemaker.sh at Mon Aug 25 16:43:08 BST 2025
+Entering the alsonote script at Mon Aug 25 16:43:08 BST 2025
+Are past the alsonote script in noisemaker.sh at Mon Aug 25 16:43:08 BST 2025
+Hello from the internals of the alsonote script is here Mon Aug 25 16:43:08 BST 2025
+About to play the sound at Mon Aug 25 16:43:08 BST 2025
+Played the sound at Mon Aug 25 16:43:08 BST 2025
+About to open kdialog Mon Aug 25 16:43:23 BST 2025
+User dealt with the kdialogs Mon Aug 25 16:43:46 BST 2025
+Exiting noisemaker at Mon Aug 25 16:43:50 BST 2025
+Goodbye from the internals of the alsonote script is here Mon Aug 25 16:44:28 BST 2025
+==========================================
+Noisemaker started at Fri Aug 22 16:03:00 BST 2025
+Entering the alsoradio script at Fri Aug 22 16:03:33 BST 2025
+Are past the alsoradio script in noisemaker.sh at Fri Aug 22 16:03:33 BST 2025
+Entering the alsonote script at Fri Aug 22 16:03:33 BST 2025
+Are past the alsonote script in noisemaker.sh at Fri Aug 22 16:03:33 BST 2025
+Hello from the internals of the alsonote script is here Fri Aug 22 16:03:33 BST 2025
+About to play the sound at Fri Aug 22 16:03:33 BST 2025
+Played the sound at Fri Aug 22 16:03:33 BST 2025
+About to open kdialog Fri Aug 22 16:03:48 BST 2025
+User dealt with the kdialogs Fri Aug 22 16:04:31 BST 2025
+Exiting noisemaker at Fri Aug 22 16:04:35 BST 2025
+Goodbye from the internals of the alsonote script is here Fri Aug 22 16:04:53 BST 2025
+==========================================
+Noisemaker started at Fri Aug 22 11:45:01 BST 2025
+Entering the alsoradio script at Fri Aug 22 11:45:33 BST 2025
+Are past the alsoradio script in noisemaker.sh at Fri Aug 22 11:45:33 BST 2025
+Entering the alsonote script at Fri Aug 22 11:45:33 BST 2025
+Are past the alsonote script in noisemaker.sh at Fri Aug 22 11:45:33 BST 2025
+Hello from the internals of the alsonote script is here Fri Aug 22 11:45:33 BST 2025
+About to play the sound at Fri Aug 22 11:45:33 BST 2025
+Played the sound at Fri Aug 22 11:45:33 BST 2025
+About to open kdialog Fri Aug 22 11:45:48 BST 2025
+==========================================
+Noisemaker started at Fri Aug 22 11:45:01 BST 2025
+Entering the alsoradio script at Fri Aug 22 11:45:33 BST 2025
+Are past the alsoradio script in noisemaker.sh at Fri Aug 22 11:45:33 BST 2025
+Entering the alsonote script at Fri Aug 22 11:45:33 BST 2025
+Are past the alsonote script in noisemaker.sh at Fri Aug 22 11:45:33 BST 2025
+Hello from the internals of the alsonote script is here Fri Aug 22 11:45:33 BST 2025
+About to play the sound at Fri Aug 22 11:45:33 BST 2025
+Played the sound at Fri Aug 22 11:45:33 BST 2025
+About to open kdialog Fri Aug 22 11:45:49 BST 2025
+==========================================
+Noisemaker started at Fri Aug 22 11:45:44 BST 2025
+Entering the alsoradio script at Fri Aug 22 11:46:17 BST 2025
+Are past the alsoradio script in noisemaker.sh at Fri Aug 22 11:46:17 BST 2025
+Entering the alsonote script at Fri Aug 22 11:46:17 BST 2025
+Are past the alsonote script in noisemaker.sh at Fri Aug 22 11:46:17 BST 2025
+Hello from the internals of the alsonote script is here Fri Aug 22 11:46:17 BST 2025
+About to play the sound at Fri Aug 22 11:46:17 BST 2025
+Played the sound at Fri Aug 22 11:46:17 BST 2025
+About to open kdialog Fri Aug 22 11:46:32 BST 2025
+User dealt with the kdialogs Fri Aug 22 11:47:15 BST 2025
+Exiting noisemaker at Fri Aug 22 11:47:19 BST 2025
+Goodbye from the internals of the alsonote script is here Fri Aug 22 11:47:37 BST 2025
+==========================================
+Noisemaker started at Fri Aug 22 16:03:32 BST 2025
+Entering the alsoradio script at Fri Aug 22 16:04:04 BST 2025
+Are past the alsoradio script in noisemaker.sh at Fri Aug 22 16:04:04 BST 2025
+Entering the alsonote script at Fri Aug 22 16:04:04 BST 2025
+Are past the alsonote script in noisemaker.sh at Fri Aug 22 16:04:04 BST 2025
+Hello from the internals of the alsonote script is here Fri Aug 22 16:04:04 BST 2025
+About to play the sound at Fri Aug 22 16:04:04 BST 2025
+Played the sound at Fri Aug 22 16:04:04 BST 2025
+About to open kdialog Fri Aug 22 16:04:19 BST 2025
+User dealt with the kdialogs Fri Aug 22 16:04:59 BST 2025
+Exiting noisemaker at Fri Aug 22 16:05:03 BST 2025
+Goodbye from the internals of the alsonote script is here Fri Aug 22 16:05:24 BST 2025

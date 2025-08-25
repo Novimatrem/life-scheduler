@@ -39,6 +39,11 @@ CURPATH=$(pwd)
 echo '$CURPATH is' && echo $CURPATH
 echo ""
 
+# check the task it is, for displaying to me
+cd "$(dirname "$0")"
+touch $(pwd)/tasknamezoey.txt
+TASKNAMEZOEY=$(cat $(pwd)/tasknamezoey.txt)
+
 chmod +x alert.sh
 chmod +x noisemaker.sh
 chmod +x life-scheduler.sh
@@ -117,40 +122,40 @@ echo ""
 
 # =====================================================================
 # movement group
-if [ $TIMEDAYTIMEKEEPING == Monday ]
-then
-if [ $TIMEHOURTIMEKEEPING -eq 09 ]
-then
-if [ $TIMEMINUTETIMEKEEPING -eq 55 ]
-then
-    echo "Time is right, do notif!"
-    sleep 0s
-    bash alert.sh
-fi
-fi
-fi
+#if [ $TIMEDAYTIMEKEEPING == Monday ]
+#then
+#if [ $TIMEHOURTIMEKEEPING -eq 09 ]
+#then
+#if [ $TIMEMINUTETIMEKEEPING -eq 55 ]
+#then
+#    echo "Time is right, do notif!"
+#    sleep 0s
+#    bash alert.sh
+#fi
+#fi
+#fi
 # end of an event.
 # =====================================================================
 
 # =====================================================================
 # walking group
-if [ $TIMEDAYTIMEKEEPING == Wednesday ]
-then
-if [ $TIMEHOURTIMEKEEPING -eq 11 ]
-then
-if [ $TIMEMINUTETIMEKEEPING -eq 55 ]
-then
-    echo "Time is right, do notif!"
-    sleep 0s
-    bash alert.sh
-fi
-fi
-fi
+#if [ $TIMEDAYTIMEKEEPING == Wednesday ]
+#then
+#if [ $TIMEHOURTIMEKEEPING -eq 11 ]
+#then
+#if [ $TIMEMINUTETIMEKEEPING -eq 55 ]
+#then
+#    echo "Time is right, do notif!"
+#    sleep 0s
+#    bash alert.sh
+#fi
+#fi
+#fi
 # end of an event.
 # =====================================================================
 
 # =====================================================================
-# shower (time moved from 15:55 to 16:03 so it doesn't crash me saying goodbye on minecraft)
+# shave (time moved from 15:55 to 16:03 so it doesn't crash me saying goodbye on minecraft)
 if [ $TIMEDAYTIMEKEEPING == Friday ]
 then
 if [ $TIMEHOURTIMEKEEPING -eq 16 ]
@@ -159,6 +164,7 @@ if [ $TIMEMINUTETIMEKEEPING -eq 03 ]
 then
     echo "Time is right, do notif!"
     sleep 0s
+    echo "SHAVE" >> tasknamezoey.txt
     bash alert.sh
 fi
 fi
@@ -176,6 +182,7 @@ if [ $TIMEMINUTETIMEKEEPING -eq 45 ]
 then
     echo "Time is right, do notif!"
     sleep 0s
+    echo "MINECRAFT" >> tasknamezoey.txt
     bash alert.sh
 fi
 fi
