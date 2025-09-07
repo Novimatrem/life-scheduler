@@ -17,6 +17,9 @@
 # PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING,
 # REPAIR OR CORRECTION.
 
+# nicer number
+sleep 2s
+
 clear
 echo "life scheduler noisemaker exited."
 echo ""
