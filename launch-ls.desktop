@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=launch-ls
+Comment=launch-ls
+Exec=bash /opt/life-scheduler/life-scheduler.sh
+Terminal=false
+Type=Application
+Path=/opt/life-scheduler/
+StartupNotify=false

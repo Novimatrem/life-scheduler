@@ -3,11 +3,13 @@ Novimatrem's life scheduler script - Licensed under the GNU GPL v3.0.
 
 [![Platform: GNU/Linux](https://img.shields.io/badge/platform-GNU/Linux-blue.svg)](www.kernel.org/linux.html) [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-REQUIRES and DEPENDS UPON ``kdialog``, ``espeak``, ``paplay``, ``bash``, and a working ``fortune`` command.
+REQUIRES and DEPENDS UPON ``kdialog``, ``espeak``, ``paplay``, ``libnotify-bin``, ``bash``, and a working ``fortune`` command.
 
 Note: script functionality requires system to remain unmuted and unlocked
 
 # Installation
+Ensure sound playback is set up & working as-in on your machine, my script will do nothing if your system isn't already capable of playing back audio.
+
 This script relies on pulseaudio's ability to respawn itself upon death to be functional. First enter the following command into your Terminal, to enable that functionality.
 ```sudo sed -i 's/^; autospawn = yes/autospawn = yes/' /etc/pulse/client.conf```
 
@@ -23,6 +25,21 @@ Make a startup program using the "Startup Applications" GUI in which the command
 For sound to play while the system is locked, in elementary OS, you need to run the following command and then reboot the system.
 
 ``sudo adduser $(whoami) audio``
+
+# Help! My distro is weird with autostart
+Hi, so if you're on a distro where autostarting things isn't as straight forward, this might work for you.
+
+This solution hinges on two components: installing a GUI to actually set the autostart program, and a .desktop file that you install to select inside of that GUI.
+
+You will need to take ``launch-ls.desktop`` from this repo's main directory, and copy it into your ``$HOME/.local/share/applications/`` folder.
+
+Then you need to install ``gnome-tweaks`` and/or ``gnome-tweaks-tool`` onto your system, ideally the native normal version using the regular default first package manager, nothing fancy or sanboxed like flatpak/snap/etc.
+
+On Debian, for me, this takes the form of the following command: ``sudo apt install -y gnome-tweaks gnome-tweak-tool``
+
+Once you have that .desktop file in that folder, and installed GNOME Tweaks, simply run GNOME Tweaks, to go the Startup Applications page inside of it, and add launch-ls as a startup application.
+
+Congratulations. The life scheduler should now boot on startup of your device.
 
 # License (code)
 [![GNU GPLv3 Image](https://www.gnu.org/graphics/gplv3-127x51.png)](http://www.gnu.org/licenses/gpl-3.0.en.html)  
