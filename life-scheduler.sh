@@ -156,7 +156,7 @@ echo ""
 
 # =====================================================================
 # shave (time moved from 15:55 to 16:03 so it doesn't crash me saying goodbye on minecraft)
-if [ $TIMEDAYTIMEKEEPING == Friday ]
+if echo "$TIMEDAYTIMEKEEPING" | grep -Ei -q '^(Monday|Tuesday|Wednesday|Thursday|Friday|Saturday|Sunday)$';
 then
 if [ $TIMEHOURTIMEKEEPING -eq 16 ]
 then
